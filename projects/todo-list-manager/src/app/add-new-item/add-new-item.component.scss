@@ -1,0 +1,32 @@
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    labe {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    input {
+      height: 50px;
+      padding: 8px;
+      border: 1px solid blue;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  }
+  button {
+    height: 50px;
+    padding: 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}

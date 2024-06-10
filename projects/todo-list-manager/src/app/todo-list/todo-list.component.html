@@ -1,0 +1,11 @@
+<ng-container *ngIf="todos$ | async as todos">
+  <ul *ngIf="todos.length > 0; else notodolist">
+    <li *ngFor="let todo of todos">
+      <app-todo-item
+        [todoItem]="todo"
+        (deleteTodoItem)="handleDeleteTodoItem($event)"
+      ></app-todo-item>
+    </li>
+  </ul>
+</ng-container>
+<ng-template #notodolist>No Item to display></ng-template>

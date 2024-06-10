@@ -1,0 +1,6 @@
+<div class="todo-item-container">
+  <h2>{{ todoItem.name }}</h2>
+  <p>{{ todoItem.description }}</p>
+  <span> {{ todoItem.completed ? "Done" : "In progress" }} </span>
+  <button (click)="onDeleteTodoItem()">Delete</button>
+</div>
